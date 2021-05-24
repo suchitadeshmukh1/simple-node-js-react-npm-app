@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'nodejs'
+            image 'registry.redhat.io/rhscl/nodejs-12-rhel7'
             args '-p 3000:3000'
         }
     }
